@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "8RFNaNcquMcDRRoJ1kpRObjhCESrSgHsMnsONrR/oG5v0+oc6jBCGBxH5hbTIAzYJc0u8NQhXGo+InTuqf9h6g==",
+  "success": true,
+  "projectFilePath": "/Users/avery/Projects/simpleform/simpleform.UITests/simpleform.UITests.csproj",
+  "expectedPackageFiles": [
+    "/Users/avery/.nuget/packages/nunit/3.12.0/nunit.3.12.0.nupkg.sha512",
+    "/Users/avery/.nuget/packages/xamarin.uitest/3.0.5/xamarin.uitest.3.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}

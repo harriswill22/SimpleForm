@@ -1,0 +1,63 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/avery/Projects/simpleform/simpleform.iOS/simpleform.iOS.csproj": {}
+  },
+  "projects": {
+    "/Users/avery/Projects/simpleform/simpleform.iOS/simpleform.iOS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/avery/Projects/simpleform/simpleform.iOS/simpleform.iOS.csproj",
+        "projectName": "simpleform.iOS",
+        "projectPath": "/Users/avery/Projects/simpleform/simpleform.iOS/simpleform.iOS.csproj",
+        "packagesPath": "/Users/avery/.nuget/packages/",
+        "outputPath": "/Users/avery/Projects/simpleform/simpleform.iOS/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/Users/avery/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "xamarinios10"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "xamarinios10": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "xamarinios10": {
+          "dependencies": {
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.3.1, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.5.0.495, )"
+            },
+            "Xamarin.TestCloud.Agent": {
+              "target": "Package",
+              "version": "[0.21.9, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

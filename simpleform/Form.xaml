@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:simpleform" x:Class="simpleform.Form">
+    <ContentPage.Content>
+           <ScrollView>
+                <Grid RowSpacing="25" ColumnSpacing="40" Margin="10,0,20,0">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                       <RowDefinition Height="Auto" />
+
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>  
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <StackLayout
+                    Margin="30,50,0,0"
+                    HorizontalOptions="Start"
+                    Orientation="Horizontal"
+                    Grid.Column="0">
+                     <Image
+                      Source="list"/>
+                    <Label Text="Clients"/>
+                </StackLayout>
+
+                 <Grid
+                    RowSpacing="2" ColumnSpacing="30"
+                    Grid.Column="0"
+                    Grid.Row="1"
+                    Grid.ColumnSpan="2"
+                    Margin="10,0,20,0">
+                    
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>  
+                    <ColumnDefinition Width="*" />
+                     <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                    <Image
+                    Grid.Row="0"
+                    HorizontalOptions="StartAndExpand"
+                    Grid.RowSpan="2"
+                    Grid.Column="0"
+                    HeightRequest="150"
+                    Source="image.png"
+                    Margin="50,10,0,45"/>
+
+                <StackLayout
+                        Margin="0,20,0,0"
+                        Orientation="Vertical"
+                        Grid.Row="0" 
+                        Grid.Column="1">
+                    <Label
+                        HorizontalOptions="StartAndExpand"
+                        Text="Name"/>
+                    <Entry
+                        Text="William Harris"/>
+                </StackLayout>
+
+                   <StackLayout
+                        Margin="0,0,0,0"
+                        Orientation="Vertical"
+                        Grid.Row="1" 
+                        Grid.Column="1">
+                        <Label Text="Cell"/>
+                         <Entry
+                            Text="770-333-2222"/>
+                    </StackLayout>
+
+
+                  </Grid>
+               
+                  <local:ShadowFrame
+                      Grid.Row="3"
+                      WidthRequest="200"
+                      Grid.Column="0"
+                     HasShadow="True"
+                     OutlineColor="#f9f9f9"
+                     Padding="0,0,0,0" >
+                  <Grid
+                    RowSpacing="2"
+                    ColumnSpacing="30"
+                    Margin="10,0,20,0">
+                    
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                     <RowDefinition Height="Auto" />
+                     <RowDefinition Height="Auto" />
+                     <RowDefinition Height="Auto" />
+                     <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>  
+                    <ColumnDefinition Width="*" />
+                     <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                      <StackLayout
+                           Margin="10,15,10,15"
+                          Grid.Row="0"
+                          Grid.Column="0"
+                          Grid.ColumnSpan="2">
+                          <Label
+                            Margin="0,5,0,-4"
+                            FontSize="Small"
+                            Text="Address" />
+                        <Entry
+                            Text="10000 HW NW SouthEast Village, 8080"/>
+                      </StackLayout>
+
+                      <StackLayout
+                          Grid.Row="1"
+                          Grid.ColumnSpan="2"
+                          Grid.Column="0">
+
+                           <Label
+                            Margin="0,5,0,-4"
+                            FontSize="Small"
+                            Text="Abbreviation" />
+                          <Entry
+                             Text="Sample Text"/>
+
+                      </StackLayout>
+
+                             <StackLayout
+                                 Grid.Row="2"
+                                 Grid.Column="0"
+                                 Margin="0,0,0,0">
+                                <Label
+                                   Margin="0,5,0,-4"
+                                   FontSize="Small"
+                                   Text="B Date" />
+                                <Entry
+                                    Text="25,July 1995"/>
+                             </StackLayout>
+
+                             <StackLayout
+                                  Grid.Row="2"
+                                  Grid.Column="1">
+                                    <Label
+                                    Margin="0,5,0,-4"
+                                    FontSize="Small"
+                                    Text="Lang." />
+                                    <Entry
+                                    Text="25,July 1995"/>
+                            </StackLayout>
+
+                      <StackLayout
+                          Grid.Column="0"
+                          Grid.ColumnSpan="2"
+                          Grid.Row="3">
+                           <Label
+                               Margin="0,5,0,-4"
+                               FontSize="Small"
+                               Text="Sex" />
+                          <Entry
+                              Margin="0,0,0,10"
+                             Text="Female"/>
+                      </StackLayout>
+                         
+                         </Grid>
+                </local:ShadowFrame>
+
+                 <local:ShadowFrame
+                      Grid.Row="3"
+                     WidthRequest="200"
+                     Grid.Column="1"
+                     HasShadow="True"
+                     OutlineColor="#f9f9f9"
+                     Padding="0,0,0,0" >
+                     <StackLayout
+                         Margin="10,15,10,15"
+                         Orientation="Vertical">
+                        <Label
+                            Margin="0,5,0,-4"
+                            FontSize="Small"
+                            Text="Home Phone" />
+                        <Entry
+                            Text="+123 456 789"/>
+
+                         <Label
+                            Margin="0,5,0,-4"
+                            FontSize="Small"
+                            Text="Emergency Phone" />
+                          <Entry
+                             Text="+952 748 951"/>
+
+                          <Label
+                              Margin="0,5,0,-4"
+                            FontSize="Small"
+                            Text="Work Phone" />
+                          <Entry
+                              Margin="0,0,0,0"
+                             Text="Female"/>
+                          <Label
+                            Margin="0,5,0,-4"
+                            FontSize="Small"
+                            Text="Sex" />
+                          <Entry
+                              Margin="0,0,0,10"
+                             Text="Female"/>
+                     </StackLayout>
+                </local:ShadowFrame>
+
+                  <local:ShadowFrame
+                      Grid.Row="4"
+                     WidthRequest="200"
+                     Grid.Column="0"
+                     Grid.RowSpan="4"
+                     HasShadow="True"
+                     OutlineColor="#f9f9f9"
+                     Padding="0,0,0,0" >
+                     <StackLayout
+                         Margin="10,40,10,0"
+                         Orientation="Vertical">
+                        <Label
+                            Margin="0,5,0,-4"
+                            FontSize="Small"
+                            Text="Parent Type" />
+                        <Entry
+                            Text="Sample Text"/>
+
+                         <Label
+                            Margin="0,5,0,-4"
+                            FontSize="Small"
+                            Text="Parent Info" />
+                          <Entry
+                             Text="Text"/>
+
+                          <Label
+                              Margin="0,5,0,-4"
+                            FontSize="Small"
+                            Text="Other Parent Type" />
+                          <Entry
+                              Margin="0,0,0,0"
+                             Text="Sample Text"/>
+
+                          <Label
+                              Margin="0,5,0,-4"
+                            FontSize="Small"
+                            Text="Other Parent Info" />
+                          <Entry
+                              Margin="0,0,0,0"
+                             Text="Text"/>
+
+                         <Label
+                              Margin="0,5,0,-4"
+                            FontSize="Small"
+                            Text="Surrogate Parent Type" />
+                          <Entry
+                              Margin="0,0,0,0"
+                             Text="Text"/>
+
+                          <Label
+                            Margin="0,5,0,-4"
+                            FontSize="Small"
+                            Text="Surrogate Parent Info" />
+                          <Entry
+                              Margin="0,0,0,0"
+                             Text="Text"/>
+                     </StackLayout>
+                </local:ShadowFrame>
+
+                 <local:ShadowFrame
+                      Grid.Row="4"
+                     WidthRequest="200"
+                     Grid.Column="1"
+                     HasShadow="True"
+                     OutlineColor="#f9f9f9"
+                     Padding="0,0,0,0" >
+                     <StackLayout
+                         Margin="10,15,10,15"
+                         Orientation="Vertical">
+                        <Label
+                            Margin="0,5,0,-4"
+                            FontSize="Small"
+                            Text="Physician Info" />
+                        <Entry
+                            Text="Sample Text"/>
+
+                         <Label
+                            Margin="0,5,0,-4"
+                            FontSize="Small"
+                            Text="School Distric Info" />
+                          <Entry
+                             Text="Text"/>
+                     </StackLayout>
+                </local:ShadowFrame>
+
+                 <local:ShadowFrame
+                      Grid.Row="5"
+                     WidthRequest="200"
+                     Grid.Column="1"
+                     HasShadow="True"
+                     OutlineColor="#f9f9f9"
+                     Padding="0,0,0,0" >
+                     <Grid>
+                       <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions> 
+
+                <Grid.ColumnDefinitions>  
+                    <ColumnDefinition Width="*" />
+                     <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                     
+                             <StackLayout
+                                 Grid.Column="0"
+                                 Margin="10,0,30,10">
+                                <Label
+                                   Margin="0,5,0,-4"
+                                   FontSize="Small"
+                                   Text="Arrive" />
+                                <Entry
+                                    Text="25,July 1995"/>
+                             </StackLayout>
+                             <StackLayout
+                                 Grid.Column="1"
+                                 Margin="0,0,10,0">
+                                    <Label
+                                    HorizontalTextAlignment="Start"
+                                    Margin="0,5,0,-4"
+                                    FontSize="Small"
+                                    Text="Depart" />
+                                    <Entry
+                                        FontSize="Small"
+                                    Text="25,July 1995"/>
+                            </StackLayout>
+                     </Grid>
+                </local:ShadowFrame>
+
+                    <local:ShadowFrame
+                      Grid.Row="6"
+                     WidthRequest="200"
+                     Grid.Column="1"
+                     HasShadow="True"
+                     OutlineColor="#f9f9f9"
+                     Padding="0,0,0,0" >
+                     <Grid>
+                       <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions> 
+
+                <Grid.ColumnDefinitions>  
+                    <ColumnDefinition Width="*" />
+                     <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                     
+                             <StackLayout
+                                 Grid.Column="0"
+                                 Margin="10,0,30,10">
+                                <Label
+                                   Margin="0,5,0,-4"
+                                   FontSize="Small"
+                                   Text="Arrive" />
+                                <Entry
+                                    Text="25,July 1995"/>
+                             </StackLayout>
+                             <StackLayout
+                                 Grid.Column="1"
+                                 Margin="0,0,10,0">
+                                    <Label
+                                    HorizontalTextAlignment="Start"
+                                    Margin="0,5,0,-4"
+                                    FontSize="Small"
+                                    Text="Depart" />
+                                    <Entry
+                                        FontSize="Small"
+                                    Text="25,July 1995"/>
+                            </StackLayout>
+                     </Grid>
+                </local:ShadowFrame>
+
+            <local:ShadowFrame
+                      Grid.Row="7"
+                     WidthRequest="200"
+                     Grid.Column="1"
+                     HasShadow="True"
+                     OutlineColor="#f9f9f9"
+                     Padding="0,0,0,0" >
+                     <StackLayout
+                         Margin="10,0,10,10"
+                         Orientation="Vertical">
+                        <Label
+                            Margin="0,5,0,-4"
+                            FontSize="Small"
+                            Text="Mobility Restrictions" />
+                        <Entry
+                            Text="Sample Text"/>
+
+                         <Label
+                            Margin="0,5,0,-4"
+                            FontSize="Small"
+                            Text="Transfer Requirements" />
+                          <Entry
+                             Text="Text"/>
+                     </StackLayout>
+                </local:ShadowFrame>
+                
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

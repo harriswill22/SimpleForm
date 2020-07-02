@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{96787E9F-AB09-41F1-B629-7DFB5C865B72}|Default">
+  <MonoDevelop.Ide.ItemProperties.simpleform.Android FirstBuild="True" PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="simpleform/Form.xaml">
+    <Files>
+      <File FileName="simpleform/Form.xaml" Line="83" Column="26" />
+      <File FileName="simpleform/Form.xaml.cs" Line="1" Column="1" />
+      <File FileName="simpleform/ShadowFrame.cs" Line="9" Column="1" />
+      <File FileName="simpleform.iOS/ShadowFrameRenderer.cs" Line="16" Column="10" />
+      <File FileName="simpleform/App.xaml.cs" Line="22" Column="10" />
+      <File FileName="simpleform/App.xaml" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="simpleform" expanded="True">
+            <Node name="simpleform" expanded="True">
+              <Node name="App.xaml" expanded="True" />
+              <Node name="Form.xaml" expanded="True" selected="True" />
+            </Node>
+            <Node name="simpleform.iOS" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.simpleform FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.simpleform.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E101F231-BB8B-4A26-AA8C-009534F3ACF2" />
+  <MonoDevelop.Ide.ItemProperties.simpleform.UITests FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
