@@ -63,3 +63,7 @@
 /Users/avery/Projects/simpleform/simpleform.iOS/obj/iPhoneSimulator/Debug/device-builds/ipad pro (11-inch) (2nd generation)-13.5/optimized/image.png
 /Users/avery/Projects/simpleform/simpleform.iOS/obj/iPhoneSimulator/Debug/device-builds/ipad pro (11-inch) (2nd generation)-13.5/optimized/logo.png
 /Users/avery/Projects/simpleform/simpleform.iOS/obj/iPhoneSimulator/Debug/device-builds/ipad pro (11-inch) (2nd generation)-13.5/optimized/
+/Users/avery/Projects/simpleform/simpleform.iOS/obj/iPhoneSimulator/Debug/device-builds/ipad pro (11-inch) (2nd generation)-13.5/optimized/refresh.png
+/Users/avery/Projects/simpleform/simpleform.iOS/obj/iPhoneSimulator/Debug/CalendarForm.xaml.g.cs
+/Users/avery/Projects/simpleform/simpleform.iOS/bin/iPhoneSimulator/Debug/XamForms.Controls.Calendar.dll
+/Users/avery/Projects/simpleform/simpleform.iOS/bin/iPhoneSimulator/Debug/XamForms.Controls.Calendar.iOS.dll

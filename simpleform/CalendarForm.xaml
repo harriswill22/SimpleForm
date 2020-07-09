@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:XamForms.Controls;assembly=XamForms.Controls.Calendar"
+    x:Class="simpleform.CalendarForm">
+    <ContentPage.Content>
+            <ScrollView>
+                <Grid RowSpacing="-5" ColumnSpacing="0" Margin="0,0,0,0">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>  
+                    <ColumnDefinition Width="*" />
+                     <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                  <Grid
+                    RowSpacing="2"
+                    ColumnSpacing="30"
+                    Margin="0,0,20,0">
+                    
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                     <RowDefinition Height="Auto" />
+                     <RowDefinition Height="Auto" />
+                     <RowDefinition Height="Auto" />
+                     <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>  
+                </Grid.ColumnDefinitions>
+
+                      <Button
+                          ImageSource="refresh.png"
+                          Grid.Row="0"
+                          Grid.ColumnSpan="2"
+                          TextColor="White"
+                          BackgroundColor="Blue"
+                          Text="Refresh"/>
+
+                     <!--#region Icons-->
+                      <Grid
+                       RowSpacing="5"
+                       ColumnSpacing="12"
+                       Grid.ColumnSpan="2"
+                        BackgroundColor="Navy"
+                        Grid.Row="1"
+                        Margin="0,0,0,0">
+                    
+                        <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                           <StackLayout
+                               Grid.Row="0"
+                               Grid.Column="0"
+                               Scale=".8"
+                               Orientation="Vertical">
+                               <Image Source="refresh.png"/>
+                               <Label
+                                   TextColor="White"
+                                   Text="Agenda"/>
+                           </StackLayout>
+
+                          <StackLayout
+                               Grid.Row="0"
+                               Grid.Column="2"
+                               Scale=".8"
+                               Orientation="Vertical">
+                               <Image Source="refresh.png"/>
+                               <Label
+                                   TextColor="White"
+                                   Text="Day"/>
+
+                           </StackLayout>
+
+                          <StackLayout
+                               Grid.Row="0"
+                               Grid.Column="3"
+                               Scale=".8"
+                               Orientation="Vertical">
+                               <Image Source="refresh.png"/>
+                               <Label
+                                   TextColor="White"
+                                   Text="Multi-Day"/>
+
+                           </StackLayout>
+
+                          <StackLayout
+                               Grid.Row="0"
+                               Grid.Column="4"
+                               Scale=".8"
+                               Orientation="Vertical">
+                               <Image Source="refresh.png"/>
+                               <Label
+                                   TextColor="White"
+                                   Text="Multi-Day"/>
+
+                           </StackLayout>
+
+                          <StackLayout
+                               Grid.Row="0"
+                               Grid.Column="5"
+                               Scale=".8"
+                               Orientation="Vertical">
+                               <Image Source="refresh.png"/>
+                               <Label
+                                   TextColor="White"
+                                   Text="Week"/>
+
+                           </StackLayout>
+
+
+                           <StackLayout
+                               Grid.Row="0"
+                               Grid.Column="6"
+                               Scale=".8"
+                               Orientation="Vertical">
+                               <Image Source="refresh.png"/>
+                               <Label
+                                   TextColor="White"
+                                   Text="Month"/>
+
+                           </StackLayout>
+
+                          <StackLayout
+                               Grid.Row="0"
+                               Grid.Column="7"
+                               Scale=".8"
+                               Orientation="Vertical">
+                               <Image Source="refresh.png"/>
+                               <Label
+                                   TextColor="White"
+                                   Text="Year"/>
+
+                           </StackLayout>
+                          
+                          
+
+                          </Grid>
+                    <!--#endregion-->
+
+                    <!--#region Calendar-->
+                        
+                             <Image
+                                 BackgroundColor="blue"
+                                 Grid.Row="2"
+                                 Grid.ColumnSpan="2"
+                                 Source="PlaceHolder"/>
+                     <!--#endregion-->
+
+                      <StackLayout
+                          Grid.Row="3"
+                          Grid.ColumnSpan="2"
+                          BackgroundColor="Navy">
+                          <Label
+                          FontAttributes="Bold"
+                          VerticalOptions="Center"
+                          BackgroundColor="Navy"
+                          Margin="20,20,20,20"
+                          TextColor="White"
+                          HorizontalOptions="Start"
+                          Text="July 5-11"/>
+                      </StackLayout>
+                      
+
+                      <!--#region ListView-->
+                      <StackLayout
+                          BackgroundColor="Blue"
+                          Grid.ColumnSpan="2"
+                          Grid.Row="4">
+                       <Label
+                           FontAttributes="Bold"
+                           Margin="20,20,0,0"
+                           TextColor="White"
+                           Text="WENDSDAY 8th July 2020" />
+
+                        <ListView x:Name="ItemsListView"
+                          BackgroundColor="Blue"
+                          ItemsSource="{Binding locations }" 
+                          VerticalOptions="FillAndExpand" 
+                          HasUnevenRows="true"
+                          RefreshCommand="{Binding LoadItemsCommand}" 
+                          IsPullToRefreshEnabled="true" 
+                          IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+                          CachingStrategy="RecycleElement">
+                       <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                               <Grid
+                                   Margin="20,0,0,0"
+                                   ColumnSpacing="0">
+                                  <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                     <RowDefinition Height="Auto" />
+                                  </Grid.RowDefinitions>
+                                  <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                  </Grid.ColumnDefinitions>
+                              
+                                  <Image
+                                       Grid.ColumnSpan="2"
+                                      Margin="0,20,0,0"
+                                       HorizontalOptions="Start"
+                                       Source="buildings.png"
+                                       Grid.Row="0"
+                                       HeightRequest="65"
+                                       Grid.Column="0"/>
+                             
+                                   <!-- Grid that shows the row to the right -->  
+                                  <Grid Grid.Row="0" 
+                                        Grid.Column="1"
+                                        BackgroundColor="Transparent">
+                                      <Grid.RowDefinitions>
+                                        <RowDefinition Height="*" />
+                                      </Grid.RowDefinitions>
+                                      <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                      </Grid.ColumnDefinitions>
+                                    
+                                      <StackLayout 
+                                        Margin="20,5,20,5"
+                                        Grid.Row="0"
+                                        Grid.Column="0">
+                                    
+                                            <Grid
+                                                x:Name="contentGrid"
+                                                BackgroundColor="Transparent">
+                                              <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto" />
+                                                    <RowDefinition Height="Auto" />
+                                                    <RowDefinition Height="Auto" />
+                                              </Grid.RowDefinitions>
+                                              <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="Auto" />
+                                                  <ColumnDefinition Width="Auto" />
+                                              </Grid.ColumnDefinitions>
+                                                <Label
+                                                       TextColor="#24253d"
+                                                       Text="{Binding location_name}"
+                                                       FontAttributes="Bold"
+                                                       Grid.Row="1"
+                                                       Margin="30,10,0,0"
+                                                       FontSize="Subtitle"/>
+
+                                                 <Label
+                                                       TextColor="#24253d"
+                                                       Text="{Binding service_name}"
+                                                       Grid.Row="2"
+                                                       Margin="30,10,0,10"/>
+
+                                                <StackLayout
+                                                        Orientation="Horizontal"
+                                                        Grid.Row="3"
+                                                        Margin="30,0,0,0">
+                                                    <Image
+                                                        Margin="0,0,-20,0"
+                                                        Source="pin"/>
+                                                    <Label
+                                                        FontSize="Small"
+                                                       Text="{Binding city_state}"
+                                                       Grid.Row="3"
+                                                       Margin="30,0,0,0"/>
+
+                                                </StackLayout>
+                                                
+
+                                            </Grid>
+                                       
+                                      </StackLayout>
+                                  
+                                  </Grid>
+                                
+                                </Grid>
+                                 <ViewCell.ContextActions>
+                                <MenuItem
+                                    Clicked="DeleteLocation_Clicked"
+                                    CommandParameter="{Binding .}"
+                                    Text="Remove Location" IsDestructive="True" />
+                            </ViewCell.ContextActions>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+        </StackLayout>
+                     <!--#endregion-->
+
+                         </Grid>
+
+                  <Grid
+                    Grid.Row="0"
+                     Grid.Column="1"
+                    RowSpacing="10"
+                    ColumnSpacing="30"
+                    Margin="10,0,20,0">
+                    
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                     <RowDefinition Height="Auto" />
+                     <RowDefinition Height="Auto" />
+                     <RowDefinition Height="Auto" />
+                     <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>  
+                    <ColumnDefinition Width="*" />
+                     <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+
+                      <StackLayout
+
+                          Grid.Row="0"
+                          Grid.ColumnSpan="2"
+                          Grid.Column="0">
+
+                           <Label
+                            FontSize="Large"
+                            Margin="0,5,0,-4"
+                            Text="WENDSDAY  8th July 2020" />
+
+                        <Label
+                            FontSize="Caption"
+                            Text="4:00pm - 5:00pm"/>
+
+                      </StackLayout>
+
+                      <BoxView
+                          Grid.Row="2"
+                          Grid.Column="0"
+                          Grid.ColumnSpan="2"
+                          VerticalOptions="Center"
+                          HeightRequest="1"
+                           WidthRequest="50"  
+                            Color="#5b5d68">
+
+                      </BoxView>
+
+                             <StackLayout
+                                 Grid.Row="3"
+                                 Grid.Column="0"
+                                 Grid.ColumnSpan="2"
+                                 Margin="0,0,0,0">
+
+                                 <StackLayout>
+                                     <Label
+                                    Margin="0,5,0,-4"
+                                    Text="Psychotherapy Session at Aba Provider Org" />
+                                 </StackLayout>
+                               
+                             </StackLayout>
+
+                            
+                            <Grid
+                                Grid.Row="4"
+                                Grid.Column="0"
+                                Grid.ColumnSpan="2"
+                                RowSpacing="10"
+                                ColumnSpacing="0"
+                                Margin="10,0,20,0">
+                    
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                 <RowDefinition Height="Auto" />
+                                 <RowDefinition Height="Auto" />
+                                 <RowDefinition Height="Auto" />
+                                 <RowDefinition Height="Auto" />
+                                 <RowDefinition Height="Auto" />
+                                 <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>  
+                                <ColumnDefinition Width="100" />
+                                 <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                                <Label
+                                  Margin="0,5,0,0"
+                                  Grid.Row="0"
+                                  Grid.Column="0"
+                                  Text="Acitivity"/>
+                                <Entry
+                                  Grid.Row="0"
+                                  Grid.Column="1"
+                                  Placeholder="Pyschotherapy"/>
+
+                                 <Label
+                                  Margin="0,5,0,0"
+                                  Grid.Row="1"
+                                  Grid.Column="0"
+                                  Text="Status"/>
+                                <Entry
+                                  Grid.Row="1"
+                                  Grid.Column="1"
+                                  Placeholder="Tentative"/>
+
+                                <Label
+                                  Margin="0,5,0,0"
+                                  Grid.Row="2"
+                                  Grid.Column="0"
+                                  Text="Description"/>
+                                <Entry
+                                  Grid.Row="2"
+                                  Grid.Column="1"
+                                  Placeholder="Orginal Recurrence: Every Wendsday from 10:Am To 11:00AM"/>
+
+                                 <Label
+                                  Margin="0,5,0,0"
+                                  Grid.Row="3"
+                                  Grid.Column="0"
+                                  Text="Facility"/>
+                                <Entry
+                                  Grid.Row="3"
+                                  Grid.Column="1"
+                                  Placeholder="Aba Provide Org"/>
+
+                                  <Label
+                                  Margin="0,5,0,0"
+                                  Grid.Row="4"
+                                  Grid.Column="0"
+                                  Text="All Day"/>
+                                <Entry
+                                  Grid.Row="4"
+                                  Grid.Column="1"
+                                  Placeholder="False"/>
+
+                                <Label
+                                    Margin="0,60,0,0"
+                                    Grid.Row="5"
+                                    Text="CLIENTS"/>
+
+                                 <Label
+                                   Margin="0,60,0,0"
+                                    Grid.Row="5"
+                                    Grid.Column="1"
+                                    Text="RESOURCES"/>
+
+                                 <ListView
+                                     Grid.Row="6"
+                                     Grid.ColumnSpan="2"
+                                     x:Name="ProfileListView"
+                                     BackgroundColor="5b5d68"
+                                      ItemsSource="{Binding profileList}"
+                                      VerticalOptions="FillAndExpand"
+                                      HasUnevenRows="true"
+                                      RefreshCommand="{Binding LoadItemsCommand}"
+                                      IsPullToRefreshEnabled="true"
+                                      IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+                                      ItemSelected="Handle_ItemTapped"
+                                      CachingStrategy="RecycleElement">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <ViewCell>
+                                            <StackLayout
+                                                Orientation="Vertical"
+                                                Padding="10">
+
+                                                <Label Text="{Binding customer_full_name, StringFormat='Customer Name: {0}'}"
+                                                       LineBreakMode="NoWrap"
+                                                       Style="{StaticResource LabelFieldsList}"
+                                                        />
+
+                                                 <Label Text="{Binding customer_email, StringFormat='Customer Email: {0}'}"
+                                                        LineBreakMode="NoWrap"
+                                                        Style="{StaticResource LabelFieldsList}"
+                                                        />
+
+                                                 <Label Text="{Binding customer_phone_number, StringFormat='Phone Number: {0}'}"
+                                                        LineBreakMode="NoWrap"
+                                                        Style="{StaticResource LabelFieldsList}"
+                                                        />
+                                            </StackLayout>
+                                        </ViewCell>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+
+
+                          </Grid>
+                      
+                     
+                         
+                         </Grid>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
