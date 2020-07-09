@@ -10,7 +10,7 @@ namespace simpleform
         {
             InitializeComponent();
 
-            MainPage = new Form();
+            MainPage = new LoginPage();
         }
 
         protected override void OnStart()

@@ -131,6 +131,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\list.png" />
     <BundleResource Include="Resources\image.png" />
+    <BundleResource Include="Resources\logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\simpleform\simpleform.projitems" Label="Shared" />

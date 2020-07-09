@@ -44,12 +44,6 @@
 /Users/avery/Projects/simpleform/simpleform.iOS/bin/iPhoneSimulator/Debug/Calabash.dll
 /Users/avery/Projects/simpleform/simpleform.iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Platform.iOS.dll
 /Users/avery/Projects/simpleform/simpleform.iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Platform.iOS.pdb
-/Users/avery/Projects/simpleform/simpleform.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.5/ibtool/_BundleResourceWithLogicalName.items
-/Users/avery/Projects/simpleform/simpleform.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.5/actool/_PartialAppManifest.items
-/Users/avery/Projects/simpleform/simpleform.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.5/actool/_BundleResourceWithLogicalName.items
-/Users/avery/Projects/simpleform/simpleform.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.5/coremlc/_PartialAppManifest.items
-/Users/avery/Projects/simpleform/simpleform.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.5/coremlc/_BundleResourceWithLogicalName.items
-/Users/avery/Projects/simpleform/simpleform.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.5/optimized/
 /Users/avery/Projects/simpleform/simpleform.iOS/obj/iPhoneSimulator/Debug/simpleform.iOS.csprojAssemblyReference.cache
 /Users/avery/Projects/simpleform/simpleform.iOS/obj/iPhoneSimulator/Debug/App.xaml.g.cs
 /Users/avery/Projects/simpleform/simpleform.iOS/obj/iPhoneSimulator/Debug/MainPage.xaml.g.cs
@@ -59,5 +53,13 @@
 /Users/avery/Projects/simpleform/simpleform.iOS/obj/iPhoneSimulator/Debug/simpleform.iOS.exe
 /Users/avery/Projects/simpleform/simpleform.iOS/obj/iPhoneSimulator/Debug/simpleform.iOS.pdb
 /Users/avery/Projects/simpleform/simpleform.iOS/obj/iPhoneSimulator/Debug/Form.xaml.g.cs
-/Users/avery/Projects/simpleform/simpleform.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.5/optimized/list.png
-/Users/avery/Projects/simpleform/simpleform.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.5/optimized/image.png
+/Users/avery/Projects/simpleform/simpleform.iOS/obj/iPhoneSimulator/Debug/LoginPage.xaml.g.cs
+/Users/avery/Projects/simpleform/simpleform.iOS/obj/iPhoneSimulator/Debug/device-builds/ipad pro (11-inch) (2nd generation)-13.5/ibtool/_BundleResourceWithLogicalName.items
+/Users/avery/Projects/simpleform/simpleform.iOS/obj/iPhoneSimulator/Debug/device-builds/ipad pro (11-inch) (2nd generation)-13.5/actool/_PartialAppManifest.items
+/Users/avery/Projects/simpleform/simpleform.iOS/obj/iPhoneSimulator/Debug/device-builds/ipad pro (11-inch) (2nd generation)-13.5/actool/_BundleResourceWithLogicalName.items
+/Users/avery/Projects/simpleform/simpleform.iOS/obj/iPhoneSimulator/Debug/device-builds/ipad pro (11-inch) (2nd generation)-13.5/coremlc/_PartialAppManifest.items
+/Users/avery/Projects/simpleform/simpleform.iOS/obj/iPhoneSimulator/Debug/device-builds/ipad pro (11-inch) (2nd generation)-13.5/coremlc/_BundleResourceWithLogicalName.items
+/Users/avery/Projects/simpleform/simpleform.iOS/obj/iPhoneSimulator/Debug/device-builds/ipad pro (11-inch) (2nd generation)-13.5/optimized/list.png
+/Users/avery/Projects/simpleform/simpleform.iOS/obj/iPhoneSimulator/Debug/device-builds/ipad pro (11-inch) (2nd generation)-13.5/optimized/image.png
+/Users/avery/Projects/simpleform/simpleform.iOS/obj/iPhoneSimulator/Debug/device-builds/ipad pro (11-inch) (2nd generation)-13.5/optimized/logo.png
+/Users/avery/Projects/simpleform/simpleform.iOS/obj/iPhoneSimulator/Debug/device-builds/ipad pro (11-inch) (2nd generation)-13.5/optimized/
